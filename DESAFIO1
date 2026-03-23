@@ -1,0 +1,77 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct No {
+    char valor;
+    struct No *prox;
+} No;
+
+// PUSH
+void push(No **topo, char c) {
+    No *novo = (No*) malloc(sizeof(No));
+    novo->valor = c;
+    novo->prox = *topo;
+    *topo = novo;
+}
+
+// POP
+char pop(No **topo) {
+    if (*topo == NULL) return '\0';
+
+    No *temp = *topo;
+    char valor = temp->valor;
+
+    *topo = temp->prox;
+    free(temp);
+
+    return valor;
+}
+
+// Verifica se vazio
+int isEmpty(No *topo) {
+    return topo == NULL;
+}
+
+// Verifica pares
+int combina(char a, char b) {
+    if (a == '(' && b == ')') return 1;
+    if (a == '{' && b == '}') return 1;
+    if (a == '[' && b == ']') return 1;
+    return 0;
+}
+
+int main() {
+    char str[100];
+    No *pilha = NULL;
+
+    printf("Digite a expressao: ");
+    scanf("%s", str);
+
+    for(int i = 0; str[i] != '\0'; i++) {
+
+        if(str[i] == '(' || str[i] == '{' || str[i] == '[') {
+            push(&pilha, str[i]);
+        }
+        else if(str[i] == ')' || str[i] == '}' || str[i] == ']') {
+
+            if(isEmpty(pilha)) {
+                printf("Expressao INVALIDA\n");
+                return 0;
+            }
+
+            char topo = pop(&pilha);
+
+            if(!combina(topo, str[i])) {
+                printf("Expressao INVALIDA\n");
+                return 0;
+            }
+        }
+    }
+
+    if(isEmpty(pilha))
+        printf("Expressao VALIDA\n");
+    else
+        printf("Expressao INVALIDA\n");
+
+    return 0;
+}
