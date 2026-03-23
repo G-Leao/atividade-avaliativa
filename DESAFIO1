@@ -6,7 +6,7 @@ typedef struct No {
     struct No *prox;
 } No;
 
-// PUSH
+
 void push(No **topo, char c) {
     No *novo = (No*) malloc(sizeof(No));
     novo->valor = c;
@@ -14,7 +14,7 @@ void push(No **topo, char c) {
     *topo = novo;
 }
 
-// POP
+
 char pop(No **topo) {
     if (*topo == NULL) return '\0';
 
@@ -27,12 +27,12 @@ char pop(No **topo) {
     return valor;
 }
 
-// Verifica se vazio
+
 int isEmpty(No *topo) {
     return topo == NULL;
 }
 
-// Verifica pares
+
 int combina(char a, char b) {
     if (a == '(' && b == ')') return 1;
     if (a == '{' && b == '}') return 1;
