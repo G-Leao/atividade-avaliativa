@@ -1,25 +1,43 @@
 # atividade-avaliativa
-INTEGRANTES: GUSTAVO LEAO, JOAO IUKI, HENRIQUE ALVES
- ex1.c
-Programa que lê três palavras digitadas pelo usuário e exibe essas palavras em ordem inversa. Trabalha com manipulação básica de strings em C.
-ex2.c
-Programa que lê 5 números inteiros, armazena em um vetor e exibe os valores na ordem inversa. Exercício focado em vetores e estruturas de repetição.
- ex3.c
-Programa que recebe os valores de uma matriz 3x3, multiplica cada elemento por 5 e exibe o resultado. Demonstra manipulação de matrizes.
- ex4.c
-Programa que lê uma matriz 3x3 e cria uma matriz identidade correspondente. Também realiza operações entre matrizes, reforçando conceitos de álgebra matricial.
- ex5.c
-Programa que realiza a multiplicação entre um vetor e uma matriz 3x3, gerando um vetor resultante. Exercício importante para entender operações matemáticas com estruturas de dados.
- ex6.c
-Sistema simples de cadastro de 10 alunos utilizando struct. O programa separa os alunos em aprovados e reprovados com base na média. Trabalha conceitos de estruturas e lógica condicional.
- ex7.c
-Programa que cadastra 5 livros (título, autor e ano) e permite buscar um livro pelo título. Envolve uso de struct e comparação de strings.
- ex8.c
-Programa que utiliza ponteiros para ler 5 números e exibir o dobro de cada valor. Focado no uso de ponteiros em C.
- ex9.c
-Programa que recebe três números, ordena em ordem crescente usando ponteiros e verifica se todos os valores são iguais. Trabalha manipulação de memória e lógica de ordenação.
- ex10.c
-Programa que cadastra vários alunos dinamicamente usando alocação de memória (malloc) e identifica o aluno com a maior nota. Exercício mais avançado envolvendo ponteiros e estruturas.
+ex1.c – Inversão de Palavras
+Programa que realiza a leitura de três palavras fornecidas pelo usuário e as exibe na ordem inversa da entrada.
+Este exercício tem como objetivo reforçar conceitos básicos de entrada e saída de dados em C, além da manipulação de strings. Também trabalha a organização lógica dos dados e o controle da ordem de exibição.
+
+ex2.c – Vetor em Ordem Inversa
+Programa que solicita ao usuário a entrada de 5 números inteiros, armazena esses valores em um vetor e, posteriormente, exibe os elementos na ordem inversa.
+O principal objetivo é praticar o uso de vetores (arrays), laços de repetição e manipulação de índices, fundamentais na programação estruturada.
+
+ex3.c – Multiplicação de Matriz
+Programa que lê os valores de uma matriz 3x3 e multiplica cada elemento por um valor fixo (5), exibindo a matriz resultante.
+Este exercício reforça o conceito de matrizes bidimensionais, percorrendo linhas e colunas com estruturas de repetição, além de operações matemáticas aplicadas em cada elemento.
+
+ex4.c – Operações com Matriz Identidade
+Programa que lê uma matriz 3x3 e trabalha com a construção de uma matriz identidade. Dependendo da implementação, pode realizar operações entre a matriz original e a matriz identidade.
+O foco está na compreensão de matrizes especiais, como a matriz identidade, e no desenvolvimento de lógica para manipulação de dados em estruturas bidimensionais.
+
+ex5.c – Multiplicação de Vetor por Matriz
+Programa que realiza a multiplicação de um vetor por uma matriz 3x3, gerando um vetor resultante.
+Este exercício explora conceitos matemáticos aplicados à programação, além de exigir uma boa compreensão de índices, loops aninhados e organização lógica para cálculo correto dos resultados.
+
+ex6.c – Cadastro de Alunos com Struct
+Sistema simples de cadastro de até 10 alunos utilizando estruturas (struct). O programa armazena dados como nome e notas, calcula a média de cada aluno e os classifica em aprovados ou reprovados.
+O objetivo é introduzir o uso de estruturas para organização de dados complexos, além de trabalhar com vetores de structs, condições lógicas e processamento de informações.
+
+ex7.c – Cadastro e Busca de Livros
+Programa que cadastra informações de até 5 livros (título, autor e ano de publicação) e permite ao usuário realizar buscas por título.
+Este exercício reforça o uso de estruturas, manipulação de strings (comparação) e implementação de uma busca simples em um conjunto de dados.
+
+ex8.c – Uso de Ponteiros
+Programa que lê 5 números inteiros utilizando ponteiros e exibe o dobro de cada valor informado.
+O foco principal é a introdução e prática com ponteiros em C, incluindo acesso indireto a variáveis e manipulação de memória.
+
+ex9.c – Ordenação com Ponteiros
+Programa que recebe três números, realiza a ordenação em ordem crescente utilizando ponteiros e verifica se os valores são iguais entre si.
+Este exercício combina lógica de ordenação com manipulação de ponteiros, reforçando conceitos importantes de comparação e troca de valores na memória.
+
+ex10.c – Alocação Dinâmica e Maior Nota
+Programa que realiza o cadastro dinâmico de alunos utilizando alocação de memória (malloc). Após o cadastro, o sistema identifica e exibe o aluno com a maior nota.
+Este é um exercício mais avançado, com foco em gerenciamento de memória, uso de ponteiros, estruturas e processamento de dados, sendo essencial para compreensão de conceitos mais profundos da linguagem C.
 
 USAMOS
 Vetores
