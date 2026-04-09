@@ -47,11 +47,12 @@ Cada símbolo de abertura (, { ou [ é empilhado.
 Quando um símbolo de fechamento aparece, o programa verifica se ele corresponde corretamente ao último símbolo aberto (topo da pilha).
 Caso haja inconsistência ou tentativa de desempilhar uma pilha vazia, a expressão é considerada inválida.
 Ao final, se a pilha estiver vazia, a expressão é válida; caso contrário, é inválida.
-   Conceitos aplicados:
+  Conceitos aplicados:
 Estrutura de dados: Pilha
 Alocação dinâmica de memória
 Manipulação de strings
 Validação de sintaxe
+
   DESAFIO 2
 Este programa realiza a inversão de uma string utilizando uma pilha encadeada.
 Funcionamento:
@@ -59,11 +60,12 @@ O usuário digita uma palavra.
 Cada caractere é inserido na pilha.
 Em seguida, os caracteres são removidos da pilha e exibidos, resultando na string invertida.
 Esse comportamento ocorre porque a pilha segue o princípio LIFO (Last In, First Out).
-    Conceitos aplicados:
+  Conceitos aplicados:
 Pilha (LIFO)
 Estrutura encadeada
 Manipulação de strings
 Uso de malloc e free
+
   DESAFIO 3
 Este programa simula uma fila de atendimento de clientes, calculando o tempo de espera de cada cliente.
 Como funciona:
@@ -74,11 +76,12 @@ Tempo de atendimento
 Os clientes são atendidos na ordem de chegada (FIFO).
 O programa calcula e exibe o tempo de espera acumulado de cada cliente.
 Também inclui uma função de validação de entrada para evitar erros ao digitar dados.
-    Conceitos aplicados:
+  Conceitos aplicados:
 Fila (FIFO)
 Estruturas encadeadas
 Validação de entrada
 Simulação de processos reais
+
    DESAFIO 4
 Este programa implementa uma fila de prioridade para impressão de documentos.
 Funcionamento:
@@ -88,8 +91,8 @@ Número de páginas
 Prioridade (quanto menor o número, maior a prioridade)
 Os documentos são inseridos na fila de forma ordenada, respeitando a prioridade.
 Na hora da impressão, os documentos são removidos da fila já na ordem correta.
-   Diferencial: Diferente de uma fila comum, aqui a inserção já organiza os elementos, garantindo eficiência na remoção.
-   Conceitos aplicados:
+  Diferencial: Diferente de uma fila comum, aqui a inserção já organiza os elementos, garantindo eficiência na remoção.
+  Conceitos aplicados:
 Fila de prioridade
 Lista encadeada ordenada
 Alocação dinâmica
